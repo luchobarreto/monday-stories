@@ -1,0 +1,174 @@
+.comment-modal-container {
+    position: fixed;
+    z-index: 1000;
+    background: #fafafa;;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.comment-modal-header {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-bottom: solid 1px rgb(219, 219, 219);
+}
+
+.comment-modal-header > svg {
+    font-size: 1.15rem;
+    margin: auto .8rem auto 0;
+}
+
+.comment-modal-header > p {
+    margin: auto 0 auto 0;
+    font-weight: 600;
+}
+
+.comment-modal-content {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    overflow-y: auto;
+    padding-bottom: .8rem;
+}
+
+.comment-modal-post-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-modal-post {
+    display: flex;
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+    border-bottom: solid 1px rgb(219, 219, 219);
+    margin-bottom: .8rem;
+}
+
+.comment-modal-post-user-image > img {
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    margin-right: .6rem;
+}
+
+.comment-modal-post-content-data {
+    display: flex;
+}
+
+.comment-modal-post-content-data > p {
+    font-size: .8rem;
+    font-weight: 700;
+    margin: 0 .3rem 0 0;
+}
+
+.comment-modal-post-content-data > p:last-child {
+    font-size: .8rem;
+    color: rgb(136, 153, 166);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.post-user-username:hover {
+    color: rgb(136, 153, 166);
+}
+
+.comment-modal-post-content > p {
+    font-size: .8rem;
+    margin: 0 0 .2rem 0;
+}
+
+.comment-modal-post-interactions {
+    width:100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% auto;
+    grid-template-rows: 100%;
+}
+
+.comment-modal-post-interactions-button {
+    display: flex;
+}
+
+.comment-modal-post-interactions-button > svg {
+    font-size: 1.3rem;
+}
+
+.comment-modal-post-interactions-button > p {
+    font-size: .75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto .1rem auto .2rem;
+}
+
+.comment-modal-comment {
+    display: flex;
+    padding: 0 1rem;
+    margin-bottom: .8rem;
+}
+
+.comment-modal-comment-user-image > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: .6rem;
+}
+
+.comment-modal-comment-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-modal-comment-content-data {
+    display: flex;
+}
+
+.comment-modal-comment-content-data > p {
+    height: fit-content;
+    font-size: .7rem;
+    font-weight: 600;
+    margin: auto .5rem auto 0;
+}
+
+.comment-modal-comment-content > p {
+    height: fit-content;
+    font-size: .7rem;
+    margin: auto 0;
+}
+
+.comment-modal-form {
+    position: fixed;
+    overflow: hidden;
+    outline: none;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: .5rem;
+    background: #fff;
+    border-top: solid 1px rgb(219, 219, 219);
+}
+
+.comment-modal-form-content {
+    width: 100%;
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.comment-modal-form-content > input {
+    margin-right: .6rem;
+}
+
+.comment-modal-form-content > button {
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    display: flex;
+}
+
+.comment-modal-form-content > button > svg {
+    margin: auto;
+}

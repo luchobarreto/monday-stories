@@ -1,0 +1,179 @@
+.camera-modal-container {
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    flex-direction: column;
+}
+
+.camera-modal-buttons {
+    position: absolute;
+    width: 100%;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: transparent;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 20%, rgba(255,255,255,0) 50%, rgba(0,23,32,0) 80%, rgba(0,0,0,0.6) 100%);
+}
+
+.camera-modal-camera {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.close-modal-button {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+}
+
+.close-modal-button > svg {
+    font-size: 1.3rem;
+    margin-left: auto;
+    color: #fff;
+}
+
+.capture-button {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background: transparent;
+    border: 2px #fff solid;
+    margin: auto auto 1rem auto;
+    display: flex;
+}
+
+.capture-button > div {
+    height: 48px;
+    width: 48px !important;
+    background: #fff;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.camera-modal-taken-photo {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.retake-photo {
+    margin-right: auto;
+    margin-left: 0 !important;
+}
+
+.camera-modal-buttons-editor {
+    position: absolute;
+    width: 100%;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background: transparent;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 20%, rgba(255,255,255,0) 50%, rgba(0,23,32,0) 80%, rgba(0,0,0,0.0) 100%);
+}
+
+.tui-image-editor-menu-filter {
+    padding:1rem .5rem !important;
+}
+
+.tui-image-editor-header {
+    display: none !important;
+}
+
+.tui-image-editor-partition {
+    display: none !important;
+}
+
+.tui-image-editor-submenu-align {
+    display: flex !important;
+}
+
+.tui-image-editor-checkbox-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    width: fit-content !important;
+    margin: auto !important;
+}
+
+.tui-image-editor-submenu-align:nth-child(5) {
+    display: none !important;
+}
+
+
+.tie-btn-deleteAll {
+    display: none !important;
+}
+
+.tie-btn-reset {
+    display: none !important;
+}
+
+.tie-btn-redo {
+    display: none !important;
+}
+
+.tie-text-effect-button {
+    display: none !important;
+}
+
+.tui-image-editor-range-wrap {
+    display: none !important;
+}
+
+.preset-5-4 {
+    display: none !important;
+}
+
+.preset-7-5 {
+    display: none !important;
+}
+
+.tie-crop-button.action {
+    display: flex !important;
+}
+
+.tui-image-editor-button.apply {
+    margin-left: auto !important;
+    display: flex !important;
+}
+
+.tui-image-editor-button.cancel {
+    margin-right: auto !important;
+    display: flex !important;
+}
+
+.tui-image-editor-button.apply > svg {
+    margin: auto 0;
+}
+
+.tui-image-editor-button.apply > label {
+    margin: auto 0;
+    height: fit-content;
+}
+
+.tui-image-editor-button.cancel > svg {
+    margin: auto 0;
+}
+
+.tui-image-editor-button.cancel > label {
+    margin: auto 0;
+    height: fit-content;
+}
+
+.tui-image-editor-menu {
+    padding-bottom: .5rem !important;
+}
+
+.submit-photo-button > svg {
+    color: #fff;
+    font-size: 1.4rem;
+}

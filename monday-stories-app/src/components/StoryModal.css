@@ -1,0 +1,76 @@
+.modal-story-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 900;
+}
+
+.modal-story-image {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+.modal-story-data {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 20%, rgba(255,255,255,0) 50%, rgba(0,23,32,0) 80%, rgba(0,0,0,0.0) 100%);
+}
+
+.modal-story-user {
+    width: 100%;
+    display: flex;
+}
+
+.modal-story-user > img {
+    width: 36px;
+    height: 36px;
+    margin-right: .6rem;
+    border-radius: 50%;
+}
+
+.modal-story-user > p {
+    color: #fff;
+    margin: auto 0;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-right: .6rem;
+}
+
+.modal-story-user > p:nth-child(3) {
+    color: rgb(212, 212, 212);
+}
+
+.modal-story-user > svg {
+    margin: auto 0 auto auto;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.modal-story-options {
+    margin-top: auto;
+    display: flex;
+}
+
+.modal-story-popover {
+    width: 100%;
+    display: flex;
+    padding: .5rem 0;
+} 
+
+.modal-story-popover > svg {
+    margin-left: auto;
+    color: #fff;
+    font-size: 1.2rem;
+}

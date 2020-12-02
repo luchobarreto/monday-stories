@@ -1,0 +1,423 @@
+#root {
+    overflow: hidden;
+}
+
+login-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.form-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+}
+
+.login-form {
+    padding: 2rem;
+    display: flex;
+    margin: auto;
+    border-radius: 15px;
+    flex-direction: column;
+    background: #fff;
+    width: 90%;
+    max-width: 425px;
+    -webkit-box-shadow: 0px 15px 45px -34px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 15px 45px -34px rgba(0,0,0,0.45);
+    box-shadow: 0px 15px 45px -34px rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+.login-form > h2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.login-form > p {
+    text-align: center;
+}
+
+.login-form > button {
+    padding: 0.5rem !important;
+    border-radius: 8px;
+}
+
+.login-input {
+    background: rgb(243, 243, 243) !important;
+    color: gray !important;
+    border: none !important;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+}
+
+
+.post-input {
+    background: rgb(243, 243, 243) !important;
+    color: gray !important;
+    border: none !important;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+}
+
+.login-input-container {
+    display: flex;
+    width: 100%;
+}
+
+.post-input-container {
+    display: flex;
+    width: 100%;
+}
+
+.login-input-container.login-input-password > input {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.toggle-password-button {
+    width: 15%;
+    background: rgb(243, 243, 243) !important;
+    color: gray !important;
+    border-radius: 0px 8px 8px 0px;
+    display: flex;
+}
+
+.login-input-password > input:focus{
+    border-color: transparent !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+.login-input-password:focus-within {
+    background-color: #fff;
+    border-color: #86b7fe !important;
+    outline: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25) !important;
+}
+
+.toggle-password-button > svg {
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.google-login-button {
+    background: rgb(248, 249, 251) !important;
+}
+
+.dashboard-container {
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+}
+
+.dashboard-feed, .dashboard-chats {
+    height: 100%;
+    display: flex;
+    background: #fafafa;
+    padding: 0;
+    flex-direction: column;
+}
+
+.dashboard-nav {
+    padding: 1rem 0 0.5rem 0;
+    border-bottom: solid 1px rgb(219, 219, 219);
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+}
+
+.dashboard-nav > h2 {
+    margin-bottom: 0 !important;
+    margin-left: 1rem;
+    font-weight: 600 !important;
+}
+
+.dashboard-feed-content {
+    background: #fafafa;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-stories {
+    margin-top: .9rem;
+    display: flex;
+    overflow: -moz-scrollbars-none;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    padding-bottom: 0.5rem;
+}
+
+.nav-stories::webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.story {
+    width: 90px;
+    padding: 0 4px;
+}
+
+.story:focus + .story-img {
+    width: 60px;
+    height: 60px;
+}
+
+.story > p {
+    margin-bottom: 0;
+    font-size: .75rem;
+    margin-top: 0.1rem;
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;      
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.create-story-button > .story > p {
+    margin-top: calc(.1rem + 3px);
+}
+
+.story-img {
+    margin: auto;
+    height: 100%;
+    border: 2px solid #fff;
+    width: 100%;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    border-radius: 50%;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative;
+}
+
+.add-story-icon {
+    background: rgb(0, 149, 246);
+    height: 20px;
+    width: 20px;
+    display: flex;
+    padding: 2px;
+    z-index: 2;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(2px) translateY(2px);
+}
+
+.add-story-icon > svg {
+    margin: auto;
+    color: #fff;
+    height: 12px;
+}
+
+.posts-container {
+    padding: 1rem;
+}
+
+.new-post-data > p{
+    width: fit-content;
+}
+
+.story-img-container, .user-has-story {
+    width: 70px !important;
+    height: 70px !important;
+    margin: auto !important;
+    background: #d6249f !important;
+    display: flex !important;
+    border-radius: 50% !important;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+}
+
+.story-viewed {
+    background: radial-gradient(circle at 30% 107%, #d2d2d2 0%, #d2d2d2 5%, #949494 45%,#9c9c9c 60%,#636363 90%) !important;
+}
+
+.story-viewed > .story-img {
+    width: 68px;
+    height: 68px;
+    border: 3px solid #fff;
+}
+
+.get-more-stories {
+    display: flex;
+}
+
+.get-more-stories > svg {
+    margin: auto;
+    color: #949494;
+    font-size: 1.7rem;
+}
+
+.new-post-data > label > svg {
+    margin: 0 0 auto .5rem;
+    font-size: 1.5rem;
+    color: #3880ec;
+}
+
+.get-more-posts {
+    padding: .5rem 1rem;
+    display: flex;
+    border-top: solid 1px rgb(219, 219, 219);
+}
+
+.post-image {
+    width: 100%;
+    padding: .2rem 0 .5rem 0;
+    border-radius: 15px;
+}
+
+.get-more-posts > svg {
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.new-post-data > .btn {
+    display: inline-block;
+    margin-left: auto;
+    padding: .375rem 1rem !important;
+}
+
+.post-input-container {
+    margin-bottom: 1rem !important;
+}
+
+.post-input {
+    width: 100%;
+}
+
+.post-input:focus {
+    outline: none;
+}
+
+.new-post-data {
+    display: flex;
+}
+
+.post-container {
+    display: flex;
+    padding: 1rem 0 0 0;
+    width: 100%;
+}
+
+.post-user {
+    display: flex;
+}
+
+.post-user-profile {
+    width: 49px;
+    height: 49px;
+    margin-right: .6rem;
+    border-radius: 50%;
+}
+
+.post-content {
+    width: 100%;
+}
+
+.post-content > p {
+    font-size: .8rem;
+    margin: 0 0 .2rem 0;
+}
+
+.post-data {
+    display: flex;
+    width: 100%;
+}
+
+.post-user-name {
+    font-size: .8rem;
+    font-weight: 700;
+    margin: 0 .3rem 0 0;
+}
+
+.post-user-username {
+    font-size: .8rem;
+    color: rgb(136, 153, 166);
+    text-decoration: none;
+}
+
+.post-user-username:hover {
+    color: rgb(136, 153, 166);
+}
+
+.post-interactions {
+    width:100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% auto;
+    grid-template-rows: 100%;
+}
+
+.post-interactions-button {
+    display: flex;
+}
+
+.post-interactions-button > svg {
+    font-size: 1.3rem;
+}
+
+.post-interactions-button > p {
+    font-size: .75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto .1rem auto .2rem;
+}
+
+.post-options {
+    margin-left: auto;
+    display: flex;
+}
+
+.post-options svg {
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+.google-login-button > svg {
+    font-size: 1.2rem;
+}
+
+.Toastify__toast-container {
+    max-width: 425px !important;
+    width: 100% !important;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Toastify__toast {
+    border-radius: 15px !important;
+    min-height: 0 !important;
+    padding: 0.7rem 1rem !important;
+}
+
+@media (min-width: 768px) {
+    .story {
+        width: 80px;
+    }
+    .story > p {
+        font-size: .7rem;
+    }
+    .story-img-container  {
+        width: 60px;
+        height: 60px;
+    }
+
+    .story-img {
+        width: 66px;
+        height: 66px;
+    }
+}
