@@ -1,7 +1,7 @@
 # Monday Stories
 
 ### Myself
-Hi!. I'm Luciano. I'm fifteen, and I'm from Argentina. "Monday Stories" is a project which I worked on for six days for the Monday.com Hackathon. I couldn't upload it because I submitted it 2 minutes late on the deadline for writing the description. It's not the code I'm the proudest of. I could do it better with error handling and good practices, but there it is. I'm glad about what I did with the time I had. It was a fantastic experience, and I learned a lot from my first hackathon. Hope you like it!. All the feedback is really appreciated. (I know that I could use better practices, don't get mad at it).
+Hi!. I'm Luciano. I'm fifteen, and I'm from Argentina. "Monday Stories" is a project which I worked on for six days for the Monday.com Hackathon. It's not the code I'm the proudest of. I could do it better with error handling and good practices, but there it is. I'm glad about what I did with the time I had. It was a fantastic experience, and I learned a lot from my first hackathon. Hope you like it!. All the feedback is really appreciated
 
 
 ### The project
@@ -12,12 +12,6 @@ In Monday Stories you can.
   - Upload Stories
   - Make Posts
   - Comment Posts
-
-It has some missing features like
-
-  - Private Chat
-  - Group Chat
-  - Video Stories
 
 Technologies used to build Monday Stories
 
